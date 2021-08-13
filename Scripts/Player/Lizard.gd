@@ -14,6 +14,7 @@ func _ready():
 			freezer = true
 			$Timer.wait_time = 0.0001
 		else:$Timer.start()
+	else:$Timer.start()
 
 func _on_Timer_timeout():
 	var bodyCount:int = $Body/Color.get_child_count()-1
